@@ -11,7 +11,7 @@ To follow along you need to provision your own instance of APIM and have it read
 ## Launch the Publisher Portal
 Once your API Management instance is created, find it in the Azure portal and click on it. You will see the dashboard of your API Management instance. Click on "Manage". This brings you to the publisher portal. 
 
-![alt text](./images/manage-button.png)
+![alt text](./images/manage-button.PNG)
 
 ## Import an API using Swagger
 We are going to import a RESTful API we created for this workshop. Here is the link to it's swagger file.
@@ -22,27 +22,27 @@ http://apim-conf.azurewebsites.net/swagger/docs/v1
 
 To import this API, click "Import API". In the popup screen, choose "From URL" then paste the above URL and choose Swagger. Also, please fill in the other fields as below then click save. 
 
-![alt text](./images/import-screen.png)
+![alt text](./images/import-screen.PNG)
 
 ## Call the API from the Console
 Click "Developer portal".
 
-![alt text](./images/launch-developer-portal.png)
+![alt text](./images/launch-developer-portal.PNG)
 
 Navigate to APIs and click on "ConferenceApiApp".
 
-![alt text](./images/api-list.png)
+![alt text](./images/api-list.PNG)
 
 Go to "Home_Get" operation and click "Try it".
 
-![alt text](./images/launch-console.png)
+![alt text](./images/launch-console.PNG)
 
 Click Send and check out the responses.
 
 ## Basic Policies
 Switch back to the publisher portal, click "Policies" and set the scope to be "ConferenceApiApp", and click "ADD POLICY".
 
-![alt text](./images/policy.png)
+![alt text](./images/policy.PNG)
 
 ### Remove Headers
 ```
@@ -84,12 +84,12 @@ Switch back to the publisher portal, click "Policies" and set the scope to be "C
 ## Basic Analytics
 To view API analytics, navigate to "Analytics" in the publisher portal. Feel free to play around with it. 
 
-![alt text](./images/analytics.png)
+![alt text](./images/analytics.PNG)
 
 ## GIT Integration
 Navigate to "Security" in the publisher portal and then go to "Configuration repository".
 
-![alt text](./images/open-git.png)
+![alt text](./images/open-git.PNG)
 
 Click "Save configuration to repository" and "Ok". This will take 10-30 seconds depending on the pricing tier of your APIM instance.
 
@@ -120,7 +120,7 @@ Go back to the publisher portal, click "Deploy repository configuration.
 ```
     <on-error>
 		<send-request mode="new" response-variable-name="commicResponse" timeout="60" ignore-error="true">
-			<set-url>https://imgs.xkcd.com/comics/30_days_hath_september.png</set-url>
+			<set-url>https://imgs.xkcd.com/comics/30_days_hath_september.PNG</set-url>
 			<set-method>GET</set-method>
 		</send-request>
 		<return-response response-variable-name="commicResponse">
@@ -133,23 +133,23 @@ Go back to the publisher portal, click "Deploy repository configuration.
 ### Build a Logic App
 Go to Azure Portal: https://portal.azure.com and click "New".
 
-![alt text](./images/add-new.png)
+![alt text](./images/add-new.PNG)
 
 Search for "Logic Apps" and click "Create".
 
-![alt text](./images/create-logic-app.png)
+![alt text](./images/create-logic-app.PNG)
 
 Provide the name, subscription, resource group and choose a location for this new Logic App. 
 
-![alt text](./images/create-logic-app-details.png)
+![alt text](./images/create-logic-app-details.PNG)
 
 Once the Logic App is created, go to the Logic App Designer, choose the "HTTP Request-Response" template.
 
-![alt text](./images/design-logic-app.png)
+![alt text](./images/design-logic-app.PNG)
 
 Provide the body text in the "Response" card.
 
-![alt text](./images/logic-app-response.png)
+![alt text](./images/logic-app-response.PNG)
 
 ### Import Logic App into APIM  
 To import an Logic App into APIM, you will need to use the new publisher UI in the Azure portal, which is currently in preview. 
@@ -162,27 +162,27 @@ Use below link to access the preview:
 
 Click on All resources.
 
-![alt text](./images/all-resources.png)
+![alt text](./images/all-resources.PNG)
 
 Search for your APIM instance and click on the search result. 
 
-![alt text](./images/search.png)
+![alt text](./images/search.PNG)
 
 Navigate to APIs.
 
-![alt text](./images/apis-in-ibiza.png)
+![alt text](./images/apis-in-ibiza.PNG)
 
 Click Add API and choose from "Logic App".
 
-![alt text](./images/import-from-logic.png)
+![alt text](./images/import-from-logic.PNG)
 
 Click Browse and select your Logic App.
 
-![alt text](./images/browse.png)
+![alt text](./images/browse.PNG)
 
 Provide details for this API.
 
-![alt text](./images/import-logic-apps-details.png)
+![alt text](./images/import-logic-apps-details.PNG)
 
 Once the Logic App is imported, feel free to play with it. 
 
@@ -190,15 +190,15 @@ Once the Logic App is imported, feel free to play with it.
 
 From the publisher portal, click 'developer portal'.
 
-![alt text](./images/launch-developer-portal.png)
+![alt text](./images/launch-developer-portal.PNG)
 
 Click the icon on the left. 
 
-![alt text](./images/launch-template.png)
+![alt text](./images/launch-template.PNG)
 
 Click "Templates" and then choose "Opeation"
 
-![alt text](./images/launch-operation-template.png)
+![alt text](./images/launch-operation-template.PNG)
 
 ## Import a SOAP API
 Let's try to import a SOAP API using the below WSDL file. The steps are the same as importing a REST API.
