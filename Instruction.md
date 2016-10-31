@@ -196,9 +196,15 @@ Click the icon on the left.
 
 ![alt text](./images/launch-template.PNG)
 
-Click "Templates" and then choose "Opeation"
+Click "Templates" and then choose "Operation"
 
-![alt text](./images/launch-operation-template.PNG)
+![alt text](./images/launch-operation-template.PNG
+
+Feel free to make changes to the template. 
+
+## APIMatic Integration
+
+We are pleased to announce our integration with APIMatic. Please follow this [tutorial](https://docs.apimatic.io/integrations/azure/) to try it out. 
 
 ## Import a SOAP API
 Let's try to import a SOAP API using the below WSDL file. The steps are the same as importing a REST API.
