@@ -120,7 +120,7 @@ Go back to the publisher portal, click "Deploy repository configuration.
 ```
     <on-error>
 		<send-request mode="new" response-variable-name="commicResponse" timeout="60" ignore-error="true">
-			<set-url>https://imgs.xkcd.com/comics/30_days_hath_september.PNG</set-url>
+			<set-url> http://imgs.xkcd.com/comics/30_days_hath_september.png</set-url>
 			<set-method>GET</set-method>
 		</send-request>
 		<return-response response-variable-name="commicResponse">
